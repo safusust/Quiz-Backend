@@ -39,7 +39,7 @@ router.post('/answer', async (req, res) => {
   }
 });
 
-// Create a new question
+// Create  new question
 router.post('/', async (req, res) => {
   const { question, optionsList, answer, subject, chapter } = req.body;
   const newQuestion = new Question({
